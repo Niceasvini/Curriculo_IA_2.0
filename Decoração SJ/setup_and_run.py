@@ -16,14 +16,34 @@ def prepare_images():
     1. Salve as fotos dos personagens que você enviou
     2. Use um editor de imagem (como GIMP, Photoshop, ou online) para separar cada personagem
     3. Salve cada personagem como arquivo PNG individual:
-       - character_1.png
-       - character_2.png
-       - character_3.png
-       - etc.
+       Matheus.png",
+        Pipe.png",
+        Silvio.png",
+        Cleydson.png",
+        Blenda.png",
+        Igor.png",
+        Agnes.png",
+        Irmão.png",
+        Daphine.png",
+        Leandro.png", 
+        Vinicius.png",
+        Carlito.png",
+        Mel.png",
+        Babi.png",
+        Nath.png",
+        Kássia.png",
+        Eduardo.png",
+        Alycia.png",
+        Gabriel.png",
+        Gabriel2.0.png",
+        Geovana.png",
+        Rodrigo.png",
+        Cami.png",
+        Tuca.png"
     
     4. Coloque todos os arquivos PNG na mesma pasta deste script
     
-    5. (Opcional) Adicione um arquivo de música "sao_joao_music.mp3" na mesma pasta
+    5. (Opcional) Adicione um arquivo de música "sao_joao_musica.mp3" na mesma pasta
     
     6. Execute o script generate_video.py
     """)

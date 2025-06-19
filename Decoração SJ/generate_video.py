@@ -299,24 +299,39 @@ def main():
     
     # Lista de imagens dos personagens (você precisa separar as imagens)
     character_images = [
-        "character_1.png",
-        "character_2.png", 
-        "character_3.png",
-        "character_4.png",
-        "character_5.png",
-        "character_6.png",
-        "character_7.png",
-        "character_8.png",
-        "character_9.png"
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Matheus.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Pipe.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Silvio.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Cleydson.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Blenda.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Igor.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Agnes.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Irmão.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Daphine.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Leandro.png", 
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Vinicius.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Carlito.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Mel.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Babi.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Nath.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Kássia.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Eduardo.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Alycia.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Gabriel.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Gabriel2.0.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Geovana.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Rodrigo.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Cami.png",
+        "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\Tuca.png"
     ]
     
     # Caminho para música de São João (opcional)
-    audio_path = "sao_joao_music.mp3"  # Adicione sua música aqui
+    audio_path = "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\sao_joao_musica.mp3"  # Adicione sua música aqui
     
     # Gerar vídeo
     generator.generate_video(
         character_images=character_images,
-        output_path="sao_joao_dance_final.mp4",
+        output_path="C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoração SJ\sao_joao_musica.mp3",
         audio_path=audio_path if os.path.exists(audio_path) else None
     )
 
