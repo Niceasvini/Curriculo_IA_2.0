@@ -197,23 +197,31 @@ class SaoJoaoVideoGenerator:
             try:
                 video = VideoFileClip(temp_video_path)
                 audio = AudioFileClip(audio_path)
+
                 if audio.duration < video.duration:
                     audio = audio.loop(duration=video.duration)
                 else:
                     audio = audio.subclip(0, video.duration)
+
                 final_video = video.set_audio(audio)
                 final_video.write_videofile(output_path, codec='libx264', audio_codec='aac')
+
+            except Exception as e:
+                print(f"Erro ao adicionar áudio: {e}")
+                print("Salvando vídeo sem áudio...")
+                # Certifique de fechar objetos antes de renomear:
+                if 'video' in locals():
+                    video.close()
+                if 'audio' in locals():
+                    audio.close()
+                if os.path.exists(temp_video_path):
+                    os.rename(temp_video_path, output_path)
+            else:
+                # Se tudo deu certo, fecha e remove temporário
                 video.close()
                 audio.close()
                 if os.path.exists(temp_video_path):
                     os.remove(temp_video_path)
-            except Exception as e:
-                print(f"Erro ao adicionar áudio: {e}")
-                print("Salvando vídeo sem áudio...")
-                os.rename(temp_video_path, output_path)
-        else:
-            print("Nenhum áudio encontrado, salvando vídeo sem som...")
-            os.rename(temp_video_path, output_path)
         
         print(f"Vídeo finalizado: {output_path}")
     
@@ -238,8 +246,8 @@ def main():
     base_dir = r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA_2.0\Decoracao_SJ"
     character_files = [
         "Matheus.png","Pipe.png","Silvio.png","Cleydson.png","Blenda.png","Igor.png",
-        "Agnes.png","Irmão.png","Daphine.png","Leandro.png","Vinicius.png","Carlito.png",
-        "Mel.png","Babi.png","Nath.png","Kássia.png","Eduardo.png","Alycia.png",
+        "Agnes.png","Irmao.png","Daphine.png","Leandro.png","Vinicius.png","Carlito.png",
+        "Mel.png","Babi.png","Nath.png","Kassia.png","Eduardo.png","Alycia.png",
         "Gabriel.png","Gabriel2.0.png","Geovana.png","Rodrigo.png","Cami.png","Tuca.png"
     ]
     character_images = [os.path.join(base_dir, f) for f in character_files]
